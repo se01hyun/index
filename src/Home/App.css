@@ -1,0 +1,71 @@
+body {margin:0px;}
+
+.App {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Header h1 {
+    margin-bottom: 0px;
+    color: blue;
+}
+
+.TodoEditor .editor_wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.TodoEditor input {
+    /* flex: 1; = 지정된 공간(gap, button 등) 외의 공간을 모두 차지하는 것 */
+    flex:1;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.TodoEditor input:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+
+.TodoEditor button {
+    cursor: pointer;
+    width: 80px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.TodoEditor button:hover {
+    background-color: white;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    color: blue;
+    transition: all 0.5s;
+}
+
+.TodoList .searchBar {
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    box-sizing: border-box;
+    padding: 15px 0 15px 0;
+}
+
+.TodoList .searchBar:focus {
+    outline: none;
+    border-bottom: 1px solid blue;
+}

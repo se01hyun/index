@@ -1,0 +1,45 @@
+.TodoItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+}
+.TodoItem:first-child {
+    padding-top: 0px;
+}
+
+.ItemCheckbox {
+    width: 20px;
+}
+
+.ItemTitle {
+    flex: 1;
+}
+
+.ItemDate {
+    font-size: 14px;
+    color: gray;
+}
+
+.ItemBtn {
+    cursor: pointer;
+    color: gray;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.ItemBtn:hover {
+    color:white;
+    background-color: blue;
+    transition: all 0.3s;
+}
+
+.TodoItem .title_col {
+    flex: 1;
+    text-decoration: none;
+    color: black;
+}
